@@ -6,7 +6,7 @@ ccmp, smcp, case, fina, medi, init, isol, lnum, onum, pnum, tnum, zero, locl, ss
 
 ## How it works?
 ### Substitutions
-For substitutions you need to suffix glyph names according to the feature tag. For example if you have glyphs named `alef` and `alef.fina`, it will generate the fina feature for the `alef.fina`. It can create the numbers lnum, onum, pnum, tnum features by interpreting the proportions of the numeral glyphs. Ligature names should be named after their components sepereated by `_` and and the component names should be explict. This means if you have Arabic glyphs named `lam.medi` and `alef.fina` the ligature name should be `lam.medi_alef.fina`. If you want to have that ligature in the `rlig` it should be named `lam.medi_alef.fina.liga`, so the feature tag gets added at the end.
+For substitutions you need to suffix glyph names according to the feature tag. For example if you have glyphs named `alef` and `alef.fina`, it will generate the fina feature for the `alef.fina`. It can create the numbers lnum, onum, pnum, tnum features by interpreting the proportions of the numeral glyphs. Ligature names should be named after their components sepereated by `_` and the component names should be explict. This means if you have Arabic glyphs named `lam.medi` and `alef.fina` the ligature name should be `lam.medi_alef.fina`. If you want to have that ligature in the `rlig` it should be named `lam.medi_alef.fina.liga`, so the feature tag gets added at the end.
 
 For ccmp feature you need to suffix the glyph with either `cmps` for compositing or `dcmp` for decomposing. Before the suffix seperate the component names in the glyph name by `_`. If there is no `_` in the glyph name, the module will decompse the glyph to its components inside the glyph.
 
