@@ -2,7 +2,7 @@
 This is my personal package to automate generating OT features in Robofont. It expects a certain naming scheme from your glyphs. It's a project that could be used as case study but I'm not going to maintain it much, but I welcome any bug reports. Use it at your own risk! 
 
 ## What features it generates?
-ccmp, smcp, case, fina, medi, init, isol, lnum, onum, pnum, tnum, calt, zero, locl, ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09, ss10, ss11, ss12, ss13, ss14, ss15, ss16, ss17, ss18, ss19, ss20, rlig, liga, dlig, curs, kern, mark
+ccmp, smcp, case, fina, medi, init, isol, lnum, onum, pnum, tnum, zero, locl, ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09, ss10, ss11, ss12, ss13, ss14, ss15, ss16, ss17, ss18, ss19, ss20, rlig, liga, dlig, curs, kern, mark
 
 ## How it works?
 ### Substitutions
@@ -12,7 +12,7 @@ For substitutions you need to name glyphs according to the feature tag. For exam
 For mark positioning in the base letter glyphs, anchors should be named like `top` or `bottom` and in mark glyphs it should be named `_top` or `_bottom`. For mark to mark positioning the base anchor should be named like `top`, same as base letters.
 
 ### Kerning
-Kerning for RTL and LTR is generetaed automatically.
+Kerning for RTL and LTR direction is generetaed automatically.
 
 ### Cursive attatchment
 Entry anchor should be named `*entry` and exit `*exit`. You can change these in the otCursive module.
@@ -33,8 +33,9 @@ generateFeatures(f)
 
 ### Using shell
 You need arguments for the familyFeatures module to work. Use the following command for help:
+
 `python3 "/path/to/repo/Lib/featureMan/familyFeatures.py" -h`
 
 
-### Why not maintained anymore?
+## Why not maintained anymore?
 I started to develope it after graduating from TypeMedia. It doesn't contain any test to ensure integrity of the generated code and I encounter bugs. I'm going to release this and start a new one with cleaner code and ability to save the features inside the UFO. I'm studying the spec at the moment so it's gonna be a long ride!
