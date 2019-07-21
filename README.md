@@ -38,4 +38,4 @@ You need arguments for the familyFeatures module to work. Use the following comm
 
 
 ## Why not maintained anymore?
-I started to develope it after graduating from TypeMedia. It doesn't contain any test to ensure integrity of the generated code and I encounter bugs. I'm going to release this and start a new one with cleaner code and ability to save the features inside the UFO. I'm studying the spec at the moment so it's gonna be a long ride!
+I started to develope it after graduating from TypeMedia. It doesn't contain any test to ensure integrity of the generated code and I encounter bugs. Sometimes it's better to let go of the past and start a new life! I will start a new one with cleaner code and ability to save the features inside the UFO. I'm studying the spec at the moment so it's gonna be a long ride!
