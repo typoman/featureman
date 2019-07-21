@@ -6,7 +6,7 @@ ccmp, smcp, case, fina, medi, init, isol, lnum, onum, pnum, tnum, zero, locl, ss
 
 ## How it works?
 ### Substitutions
-For substitutions you need to name glyphs according to the feature tag. For example if you have glyphs named `alef` and `alef.fina`, it will generate the fina feature for the `alef.fina`. It can create the numbers lnum, onum, pnum, tnum features by interpreting the proportions of the numeral glyphs. Ligature names should be named after their components sepereated by `_` and and the component names should be explict. This means if you have Arabic glyphs named `lam.medi` and `alef.fina` the ligature name should be `lam.medi_alef.fina`.
+For substitutions you need to name glyphs according to the feature tag. For example if you have glyphs named `alef` and `alef.fina`, it will generate the fina feature for the `alef.fina`. It can create the numbers lnum, onum, pnum, tnum features by interpreting the proportions of the numeral glyphs. Ligature names should be named after their components sepereated by `_` and and the component names should be explict. This means if you have Arabic glyphs named `lam.medi` and `alef.fina` the ligature name should be `lam.medi_alef.fina`. If you want to have that ligature in the `rlig` it should be named `lam.medi_alef.fina.liga`, so the feature tag gets added at the end.
 
 ### Mark Positioning
 For mark positioning in the base letter glyphs, anchors should be named like `top` or `bottom` and in mark glyphs it should be named `_top` or `_bottom`. For mark to mark positioning the base anchor should be named like `top`, same as base letters.
