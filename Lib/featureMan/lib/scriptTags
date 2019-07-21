@@ -1,0 +1,41 @@
+# this file is taken form this url:http://partners.adobe.com/public/developer/opentype/index_tag1.html
+Arabic	arab
+Armenian	armn
+Bengali	beng
+Bopomofo	bopo
+Braille	brai
+Byzantine Music	byzm
+Canadian Syllabics	cans
+Cherokee	cher
+CJK Ideographic	hani
+Cyrillic	cyrl
+Default	DFLT
+Devanagari	deva
+Ethiopic	ethi
+Georgian	geor
+Greek	grek
+Gujarati	gujr
+Gurmukhi	guru
+Hangul Jamo	jamo
+Hangul	hang
+Hebrew	hebr
+Hiragana	kana
+Kannada	knda
+Katakana	kana
+Khmer	khmr
+Lao	lao
+Latin	latn
+Malayalam	mlym
+Mongolian	mong
+Myanmar	mymr
+Ogham	ogam
+Oriya	orya
+Runic	runr
+Sinhala	sinh
+Syriac	syrc
+Tamil	taml
+Telugu	telu
+Thaana	thaa
+Thai	thai
+Tibetan	tibt
+Yi	yi

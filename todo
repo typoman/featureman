@@ -1,0 +1,46 @@
+"""
+. fix properties for the glyphs that their script can't be recognized
+. generate files per feature (for easier diagnose)
+. rules : (lookupType, flag, language, context before, context after)
+. interface for psydo names and calt
+. language
+. interface for settings (changing suffixes)
+. in hebrew composites (ccmp) when a base letter is combined with one or more marks, the marks should be suffled in the substitution, so one sub is not enough, any order of makrs should create similar composite. maybe this should also be extended to all the composites in any script?
+
+
+. calt
+. share lookups between languages?
+. share lookups berween features?
+. calt on any feature?
+. c2sc
+. numr
+. dnom
+. frac
+. ordn
+. sups
+. subs
+. sinf
+. feature name for stylistic alternates like:
+  featureNames {
+        name "Alternate g"; # Windows English
+    };
+. if there is no small caps for the accented glyphs, in scmp use sub many by one and replace them by the non accented glyph?
+. create predefined unicode based ccmp?
+
+
+put rules inside glyph.lib (every rule also comes with an order number)
+
+
+extra line at end of feature contents?
+
+look at opensans pro for features
+fractions
+superscript
+subscript
+ordinals
+superior
+inferior
+sceintific figures
+
+
+"""
