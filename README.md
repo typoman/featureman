@@ -23,7 +23,7 @@ Entry anchor should be named `*entry` and exit `*exit`. You can change these in 
 1. Clone the repo
 2. In terminal go to the repo directory and `pip3 install -e .` (installing in editable mode).
 
-## How to genreate the feature code?
+## How to generate the feature code?
 ### Using the python module:
 You need to use fontParts to open the font, or you can use RoboFont. The following example shows how to use it outside Robofont using fontParts.
 ```
