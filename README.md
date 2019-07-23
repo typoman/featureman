@@ -1,5 +1,5 @@
 ## What is this?
-This is my personal package to automate generating OT features in Robofont. It expects a specific naming scheme from your glyphs. This package has been used for commercial font projects, and it should create a reliable feature code unless you prove me wrong and I encourage you to do that. Although the kerning module was done in python 2 and there are some issues in python 3 that I need to address atm. Please let me know about any bugs, I will try to fix it as soon as I can! 
+This is my personal package to automate generating OT features in RoboFont. It expects a specific naming scheme from your glyphs. This package has been used for commercial font projects, and it should create a reliable feature code unless you prove me wrong and I encourage you to do that. Although the kerning module was done in python 2 and there are some issues in python 3 that I need to address atm. Please let me know about any bugs, I will try to fix it as soon as I can! 
 
 ## What features it generates?
 `ccmp`, `smcp`, `case`, `fina`, `medi`, `init`, `isol`, `lnum`, `onum`, `pnum`, `tnum`, `zero`, `locl`, `ss01`, `ss02`, `ss03`, `ss04`, `ss05`, `ss06`, `ss07`, `ss08`, `ss09`, `ss10`, `ss11`, `ss12`, `ss13`, `ss14`, `ss15`, `ss16`, `ss17`, `ss18`, `ss19`, `ss20`, `rlig`, `liga`, `dlig`, `curs`, `kern`, `mark`, `mkmk`
@@ -25,11 +25,19 @@ Entry anchor should be named `*entry` and exit `*exit`. You can change these in 
 
 ## How to generate the feature code?
 ### Using the python module:
-You need to use fontParts to open the font, or you can use RoboFont. The following example shows how to use it outside Robofont using fontParts.
+You need to use fontParts to open the font, or you can use RoboFont. 
+
+The following example shows how to use it outside RoboFont using fontParts.
 ```
 from featureMan.familyFeatures import generateFeatures
 from fontParts.fontshell.font import RFont
 f = RFont("path/to/file.ufo")
+generateFeatures(f)
+```
+
+Inside RoboFont
+```
+f = CurrentFont()
 generateFeatures(f)
 ```
 
