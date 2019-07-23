@@ -6,7 +6,7 @@ This is my personal package to automate generating OT features in RoboFont. It e
 
 ## How it works?
 ### Substitutions
-For substitutions, you need to suffix glyph names according to the feature tag. For example, if you have glyphs named `alef` and `alef.fina`, it will generate the `fina` feature for the `alef.fina`. It can create the numbers `lnum`, `onum`, `pnum`, `tnum` features by interpreting the proportions of the numeral glyphs. Ligature names should be named after their components sepereated by `_` and the component names should be explict. This means if you have Arabic glyphs named `lam.medi` and `alef.fina` the ligature name should be `lam.medi_alef.fina`. If you want to have that ligature in the `rlig` it should be named `lam.medi_alef.fina.rlig`, so the feature tag gets added at the end.
+For substitutions, you need to suffix glyph names according to the feature tag. For example, if you have glyphs named `alef` and `alef.fina`, it will generate the `fina` feature for the `alef.fina`. It can create the numbers `lnum`, `onum`, `pnum`, `tnum` features by interpreting the proportions of the numeral glyphs. Ligature names should be named after their components separated by `_` and the component names should be explicit. This means if you have Arabic glyphs named `lam.medi` and `alef.fina` the ligature name should be `lam.medi_alef.fina`. If you want to have that ligature in the `rlig` it should be named `lam.medi_alef.fina.rlig`, so the feature tag gets added at the end.
 
 For `ccmp` feature you need to suffix the glyph with either `cmps` for compositing or `dcmp` for decomposing. Before the suffix separate the component names in the glyph name by `_`. If there is no `_` in the glyph name, the module will decompose the glyph to its components inside the glyph.
 
@@ -35,7 +35,7 @@ f = RFont("path/to/file.ufo")
 generateFeatures(f)
 ```
 
-Inside RoboFont you should also add the repo path to RF enviroments as described here [in RoboFont website](https://doc.robofont.com/documentation/building-tools/python/external-modules/).
+Inside RoboFont you should also add the repo path to RF environments as described here [in RoboFont website](https://doc.robofont.com/documentation/building-tools/python/external-modules/).
 
 ```
 from featureMan.familyFeatures import generateFeatures
@@ -46,17 +46,19 @@ generateFeatures(f)
 ### Using shell
 You need arguments for the familyFeatures module to work. Use the following command for help:
 
-`python3 "/path/to/repo/Lib/featureMan/familyFeatures.py" -h`
+```python3 "/path/to/repo/Lib/featureMan/familyFeatures.py" -h```
 
 
-## Why not maintained anymore?
-I started to develop it after graduating from TypeMedia. It doesn't contain any test to ensure the integrity of the generated code, and sometimes I encounter bugs. I want to start a new package that saves the features inside the UFO and doesn't deal with AFDKO feature file. The issues of AFDKO feature file is not a topic for a discussion here, but for starters, if you've ever worked with Microsoft VOLT, you know how convenient it is to create OpenType tables compared to AFDKO feature file. It's not about the UI, it's about how the data is structured. I'm studying the spec at the moment, so it's gonna be a long ride!
+## Are you gonna add more features?
+Probably, do you want me to?! I started to develop this package right after graduating from TypeMedia. I was an amateur designer, experimenting with python. The package doesn't contain any test to ensure the integrity of the generated code, and sometimes I encounter bugs. I want to start a new one that saves the features inside the UFO and doesn't deal with AFDKO feature file. But until I make that, I keep fixing bugs if you encounter one.
+
+The issues of AFDKO feature file is not a topic for a discussion here. But for starters, if you've ever worked with Microsoft VOLT, you know how convenient it is to create OpenType tables compared to AFDKO feature file. It's not about the UI, it's about how the data is structured. It makes much more sense in VOLT. I'm studying the spec at the moment, so it's gonna be a long ride!
 
 #### To do
-. Fractions
-. Superscript
-. Subscript
-. Ordinals
-. Superior
-. Inferior
-. Sceintific Figures
+* Fractions
+* Superscript
+* Subscript
+* Ordinals
+* Superior
+* Inferior
+* Sceintific Figures
