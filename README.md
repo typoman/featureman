@@ -35,8 +35,10 @@ f = RFont("path/to/file.ufo")
 generateFeatures(f)
 ```
 
-Inside RoboFont
+Inside RoboFont you should also add the repo path to RF enviroments as described here [in RoboFont website](https://doc.robofont.com/documentation/building-tools/python/external-modules/).
+
 ```
+from featureMan.familyFeatures import generateFeatures
 f = CurrentFont()
 generateFeatures(f)
 ```
