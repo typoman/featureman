@@ -1,8 +1,8 @@
 ## What is this?
-This is my personal package to automate generating OT features in Robofont. It expects a certain naming scheme from your glyphs. It's a project that could be used as case study but I'm not going to maintain it much, but I welcome any bug reports. Use it at your own risk! 
+This is my personal package to automate generating OT features in Robofont. It expects a certain naming scheme from your glyphs. This project has been used on commercial projects and it should generate a solid feature code. Although the kerning module was made in python 2 and there is some issues in python 3. Please let me know abou any bugs, I will try to fix it for you. Use it at your own risk! 
 
 ## What features it generates?
-ccmp, smcp, case, fina, medi, init, isol, lnum, onum, pnum, tnum, zero, locl, ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09, ss10, ss11, ss12, ss13, ss14, ss15, ss16, ss17, ss18, ss19, ss20, rlig, liga, dlig, curs, kern, mark
+ccmp, smcp, case, fina, medi, init, isol, lnum, onum, pnum, tnum, zero, locl, ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09, ss10, ss11, ss12, ss13, ss14, ss15, ss16, ss17, ss18, ss19, ss20, rlig, liga, dlig, curs, kern, mark, mkmk
 
 ## How it works?
 ### Substitutions
@@ -40,4 +40,4 @@ You need arguments for the familyFeatures module to work. Use the following comm
 
 
 ## Why not maintained anymore?
-I started to develope it after graduating from TypeMedia. It doesn't contain any test to ensure integrity of the generated code and I encounter bugs. Sometimes it's better to let go of the past and start a new life! I will start a new one with cleaner code and ability to save the features inside the UFO. I'm studying the spec at the moment so it's gonna be a long ride!
+I started to develope it after graduating from TypeMedia. It doesn't contain any test to ensure integrity of the generated code and sometimes I encounter bugs. I want to start a new package that saves the features inside the UFO and doesn't deal with AFDKO feature file. The issues of AFDKO feature file is not a topic for a discussion here but for starters if you've ever worked with Microsoft VOLT you know how convenient it is to create OpenType tables compared to AFDKO feature file. It's not about the UI, it's about how the data is structured. I'm studying the spec at the moment so it's gonna be a long ride!
